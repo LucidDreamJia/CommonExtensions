@@ -1,6 +1,8 @@
 # CommonExtensions
 一些常用的类目
 
-注 : 在podfile加入即可使用
+注 : 使用方法
 
-pod "CommonExtensions"
+1、 在podfile加入 pod "CommonExtensions" 执行 pod install
+
+2、 在PCH导入 #import "CommonExtensionsHeader.h"
