@@ -13,5 +13,6 @@
 #import "NSString+Tools.h"
 #import "UIBarButtonItem+LJBarButtonItem.h"
 #import "UIView+Utils.h"
+#import "UIImage+Extension.h"
 
 #endif /* CommonExtensionsHeader_h */

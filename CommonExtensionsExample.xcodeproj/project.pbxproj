@@ -20,6 +20,7 @@
 		0494924B207B4B7C003CDBEB /* UIBarButtonItem+LJBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04949244207B4B7C003CDBEB /* UIBarButtonItem+LJBarButtonItem.m */; };
 		0494924C207B4B7C003CDBEB /* UITableView+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 04949246207B4B7C003CDBEB /* UITableView+Configuration.m */; };
 		0494924D207B4B7C003CDBEB /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04949248207B4B7C003CDBEB /* UIView+Utils.m */; };
+		0494930F207EEE29003CDBEB /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0494930E207EEE29003CDBEB /* UIImage+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		04949246207B4B7C003CDBEB /* UITableView+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Configuration.m"; sourceTree = "<group>"; };
 		04949247207B4B7C003CDBEB /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
 		04949248207B4B7C003CDBEB /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		0494930D207EEE29003CDBEB /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		0494930E207EEE29003CDBEB /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				04949244207B4B7C003CDBEB /* UIBarButtonItem+LJBarButtonItem.m */,
 				04949245207B4B7C003CDBEB /* UITableView+Configuration.h */,
 				04949246207B4B7C003CDBEB /* UITableView+Configuration.m */,
+				0494930D207EEE29003CDBEB /* UIImage+Extension.h */,
+				0494930E207EEE29003CDBEB /* UIImage+Extension.m */,
 				04949247207B4B7C003CDBEB /* UIView+Utils.h */,
 				04949248207B4B7C003CDBEB /* UIView+Utils.m */,
 			);
@@ -303,6 +308,7 @@
 				0494924A207B4B7C003CDBEB /* NSString+Tools.m in Sources */,
 				0494924C207B4B7C003CDBEB /* UITableView+Configuration.m in Sources */,
 				0494920D207B4B27003CDBEB /* AppDelegate.m in Sources */,
+				0494930F207EEE29003CDBEB /* UIImage+Extension.m in Sources */,
 				0494924D207B4B7C003CDBEB /* UIView+Utils.m in Sources */,
 				04949249207B4B7C003CDBEB /* CALayer+LayerColor.m in Sources */,
 			);
