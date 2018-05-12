@@ -260,7 +260,38 @@
     
     return clipImage;
     
+}
+
+//在图片上绘制文字
++ (UIImage *)drawText:(NSString *)text forImage:(UIImage *)image{
+    
+    CGSize size = CGSizeMake(image.size.width,image.size.height ); // 画布大小
+    
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(size.width - 1, size.height - 1),NO,0.0);
+    
+    [image drawAtPoint:CGPointMake(0,0)];
+    
+    // 获得一个位图图形上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextDrawPath(context,kCGPathStroke);
+    
+    NSDictionary *attributes = @{ NSFontAttributeName:[UIFont systemFontOfSize:9.f], NSForegroundColorAttributeName:[UIColor whiteColor]};
+    
+    //计算出文字的宽度 设置控件限制的最大size为图片的size
+    CGSize textSize = [text boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
+    
+    // 画文字 让文字处于居中模式
+    [text drawAtPoint:CGPointMake((size.width - textSize.width)/2,(size.height - textSize.height)/2) withAttributes:attributes];
+    
+    // 返回绘制的新图形
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return newImage;
     
 }
+
 
 @end

@@ -97,4 +97,15 @@
  */
 + (UIImage *)imageWithClipSquareImage:(UIImage *)image borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)color;
 
+
+/**
+ 在图片上绘制文字
+
+ @param text 绘制的文字
+ @param image 图片
+ @return 返回绘制文字的图片
+ */
++ (UIImage *)drawText:(NSString *)text forImage:(UIImage *)image;
+
+
 @end

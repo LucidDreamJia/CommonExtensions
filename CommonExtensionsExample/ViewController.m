@@ -10,6 +10,7 @@
 #import "CommonExtensionsHeader.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UISlider *slider;
 
 @end
 
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.slider setThumbImage:[UIImage drawText:@"100.0%" forImage:[UIImage imageNamed:@"sliderImage"]] forState:UIControlStateNormal];
     
 }
 
