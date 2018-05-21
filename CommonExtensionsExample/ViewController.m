@@ -22,6 +22,8 @@
     
     [self.slider setThumbImage:[UIImage drawText:@"100.0%" forImage:[UIImage imageNamed:@"sliderImage"]] forState:UIControlStateNormal];
     
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"测试" titleColor:[UIColor redColor] disableColor:nil target:self action:nil];
+    
 }
 
 

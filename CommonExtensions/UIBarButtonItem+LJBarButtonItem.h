@@ -16,6 +16,6 @@
 
 + (instancetype)leftBarButtonItemWithImage:(NSString *)image highImage:(NSString *)highImage target:(id)target action:(SEL)action;
 
-+ (instancetype)itemWithTitle:(NSString *)title target:(id)target action:(SEL)action;
++ (instancetype)itemWithTitle:(NSString *)title titleColor:(UIColor *)titleColor disableColor:(UIColor *)disableColor target:(id)target action:(SEL)action;
 
 @end

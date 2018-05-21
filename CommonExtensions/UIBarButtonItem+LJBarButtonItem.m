@@ -48,7 +48,7 @@
     return [[self alloc] initWithCustomView:button];
 }
 
-+ (instancetype)itemWithTitle:(NSString *)title target:(id)target action:(SEL)action {
++ (instancetype)itemWithTitle:(NSString *)title titleColor:(UIColor *)titleColor disableColor:(UIColor *)disableColor target:(id)target action:(SEL)action {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setTitle:title forState:UIControlStateNormal];
     // 让按钮内部的所有内容右对齐
@@ -59,8 +59,8 @@
     button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -5);
     
     button.titleLabel.font = [UIFont systemFontOfSize:16];
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateDisabled];
+    [button setTitleColor:titleColor forState:UIControlStateNormal];
+    [button setTitleColor:disableColor forState:UIControlStateDisabled];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return [[self alloc] initWithCustomView:button];
 }
