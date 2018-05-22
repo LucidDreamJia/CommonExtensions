@@ -19,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UIImage *image = [UIImage drawText:@"90%" textFont:9 textColor:[UIColor whiteColor] forImageName:@"sliderImage"];
-    [self.slider setThumbImage:image forState:UIControlStateNormal];
+    UIImage *slideimage = [UIImage drawText:@"90%" textFont:9 textColor:[UIColor whiteColor] forImageName:@"sliderImage"];
+    [self.slider setThumbImage:slideimage forState:UIControlStateNormal];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"测试" titleColor:[UIColor redColor] disableColor:nil target:self action:nil];
     

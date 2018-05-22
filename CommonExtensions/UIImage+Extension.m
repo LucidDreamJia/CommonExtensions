@@ -265,13 +265,13 @@
 //在图片上绘制文字
 + (UIImage *)drawText:(NSString *)text textFont:(CGFloat)textFont textColor:(UIColor *)textColor forImageName:(NSString *)imageName {
     
-    UIImage *image = [UIImage imageNamed:imageName];
+    UIImage *getImage = [UIImage imageNamed:imageName];
     
-    CGSize size = CGSizeMake(image.size.width,image.size.height ); // 画布大小
+    CGSize size = CGSizeMake(getImage.size.width,getImage.size.height ); // 画布大小
     
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(size.width, size.height),NO,0.0);
     
-    [image drawAtPoint:CGPointMake(0,0)];
+    [getImage drawAtPoint:CGPointMake(0,0)];
     
     // 获得一个位图图形上下文
     CGContextRef context = UIGraphicsGetCurrentContext();
