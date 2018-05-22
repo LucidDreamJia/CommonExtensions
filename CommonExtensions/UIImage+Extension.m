@@ -263,11 +263,13 @@
 }
 
 //在图片上绘制文字
-+ (UIImage *)drawText:(NSString *)text forImage:(UIImage *)image{
++ (UIImage *)drawText:(NSString *)text textFont:(CGFloat)textFont textColor:(UIColor *)textColor forImageName:(NSString *)imageName {
+    
+    UIImage *image = [UIImage imageNamed:imageName];
     
     CGSize size = CGSizeMake(image.size.width,image.size.height ); // 画布大小
     
-    UIGraphicsBeginImageContextWithOptions(CGSizeMake(size.width - 1, size.height - 1),NO,0.0);
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(size.width, size.height),NO,0.0);
     
     [image drawAtPoint:CGPointMake(0,0)];
     
@@ -276,7 +278,7 @@
     
     CGContextDrawPath(context,kCGPathStroke);
     
-    NSDictionary *attributes = @{ NSFontAttributeName:[UIFont systemFontOfSize:9.f], NSForegroundColorAttributeName:[UIColor whiteColor]};
+    NSDictionary *attributes = @{ NSFontAttributeName:[UIFont systemFontOfSize:textFont], NSForegroundColorAttributeName:textColor,NSForegroundColorAttributeName:textColor};
     
     //计算出文字的宽度 设置控件限制的最大size为图片的size
     CGSize textSize = [text boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
