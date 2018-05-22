@@ -36,7 +36,7 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:highImage] forState:UIControlStateHighlighted];
-    button.size = CGSizeMake(50, 40);
+    button.size = CGSizeMake(60, 60);
     // 让按钮内部的所有内容左对齐
     button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     //[button sizeToFit];
